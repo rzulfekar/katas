@@ -1,4 +1,5 @@
 export function getHighestNumber(numbers: number[]): number {
+
   if (!numbers.length) {
     throw new Error('array is empty')
   }
