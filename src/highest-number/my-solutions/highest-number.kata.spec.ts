@@ -13,4 +13,9 @@ describe('getHighestNumber', () => {
     const actual = getHighestNumber(given)
     expect(actual).toBe(3)
   })
+
+  it('should return error on an empty array', () => {
+    const given = [] as number[]
+    expect(() => getHighestNumber(given)).toThrow('array is empty')
+  })
 })
